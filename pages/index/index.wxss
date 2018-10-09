@@ -1,0 +1,140 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.swiper {
+  width: 100%;
+  height: 350rpx;
+}
+
+.swiper-item {
+  width: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.recommend {
+  width: 100%;
+}
+
+.recommend-content {
+  width: 100%;
+  margin-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recommend-content-item {
+  width: 45%;
+  height: 250rpx;
+  margin: 4rpx;
+  position: relative;
+}
+
+.recommend-img {
+  width: 100%;
+  height: 100%;
+}
+
+.recommend-content-text {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  font-size: 14px;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  width: 100%;
+}
+
+.list-item {
+  width: 100%;
+  height: 450rpx;
+  margin-top: 10rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-img {
+  width: 100%;
+  height: 300rpx;
+}
+
+.list-item-avtor {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 260rpx;
+  right: 50rpx;
+}
+
+.list-item-tv {
+  height: 150rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.list-item-tv text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list-item-tv1 {
+  width: 500rpx;
+  height: 50rpx;
+  font-size: 15px;
+  color: #000;
+}
+
+.list-item-tv2 {
+  width: 100%;
+  font-size: 11px;
+  color: #ccc;
+  margin-top: 5rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+
+.title {
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left-color: palegreen;
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.title-text1 {
+  font-size: 14px;
+}
+
+.title-text2 {
+  font-size: 12px;
+  color: forestgreen;
+}

@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='bt'>
+    <button type='primary'>Tosat</button>
+  </view>
+  <view class='bt'>
+    <button type='primary'>弹窗</button>
+  </view>
+
+  <!--自定义组件-->
+  <view class='hot' >
+    <hot-view imgUrl="/images/icon_wode1.png" textStr="第一" class='hot-view'></hot-view>
+    <hot-view imgUrl="/images/icon_wode1.png" textStr="第二" class='hot-view'></hot-view>
+    <hot-view imgUrl="/images/icon_wode1.png" textStr="第三" class='hot-view'></hot-view>
+    <hot-view imgUrl="/images/icon_wode1.png" textStr="第四" class='hot-view'></hot-view>
+  </view>
+</view>

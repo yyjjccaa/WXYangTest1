@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  padding-top: 10rpx;
+}
+
+.bt {
+  width: 30%;
+}
+
+.hot-view{
+ width: 20%;
+}
+
+.hot {
+  width: 100%;
+  display: flex;
+  flex-wrap:  nowrap;
+  justify-content:  space-around;
+  margin-top: 20rpx
+  
+}

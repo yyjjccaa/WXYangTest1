@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="#fff">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item class="swiper-item">
+        <image src="{{item}}" class="slide-image" mode='aspectFill'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="recommend">
+    <view class='title'>
+      <text class='title-text1'>精品推荐</text>
+      <text class='title-text2'>更多</text>
+    </view>
+    <view class='recommend-content'>
+      <view wx:for="{{contents}}" class='recommend-content-item'>
+        <image src="{{item.url}}" class='recommend-img' bindload='bindLoad'></image>
+        <view class='recommend-content-text'>
+          <text>{{item.str}}</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="list">
+    <view class='title'>
+      <text class='title-text1'>列表净品</text>
+      <text class='title-text2'>更多</text>
+    </view>
+    <view class='list-item' wx:for="{{listData}}">
+      <image src="{{item.url}}" class='list-item-img' mode='aspectFill'></image>
+      <image src="{{item.avtorUrl}}" class='list-item-avtor'></image>
+      <view class='list-item-tv'>
+        <view class='list-item-tv1'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='list-item-tv2'>
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
