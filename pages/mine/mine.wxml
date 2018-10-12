@@ -13,4 +13,5 @@
     <hot-view imgUrl="/images/icon_wode1.png" textStr="第三" class='hot-view'></hot-view>
     <hot-view imgUrl="/images/icon_wode1.png" textStr="第四" class='hot-view'></hot-view>
   </view>
+  <view>{{object.key}}  {{array[0]}}</view>
 </view>

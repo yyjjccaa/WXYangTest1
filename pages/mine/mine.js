@@ -1,11 +1,16 @@
 //获取应用实例
 const app = getApp()
+var common = require('../../utils/commonJS/common.js')
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    hotlist: ["","","",""]
+    hotlist: ["","","",""],
+    object: {
+      key: 'Hello'
+    },
+    array: ['MINA']
       
     
     
@@ -22,6 +27,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    common.sayHello('杨俊才222')
     
   },
 
